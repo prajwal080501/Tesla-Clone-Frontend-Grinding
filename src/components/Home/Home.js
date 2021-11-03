@@ -7,6 +7,7 @@ const Home = () => {
         <Container>
 
             <Section
+                id="model-s"
                 title="Model S"
                 description="Order online for touchless delivery"
                 backgroundImg="model-s.jpg"
@@ -14,6 +15,7 @@ const Home = () => {
                 rightBtnText="Existing Inventory"
             />
             <Section
+                id="model-y"
                 title="Model Y"
                 description="Order online for touchless delivery"
                 backgroundImg="model-y.jpg"

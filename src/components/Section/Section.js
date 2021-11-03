@@ -10,7 +10,7 @@ import {
 } from "./SectionElements";
 
 const Section = ({
-  title,
+    title,
   description,
   leftBtnText,
   rightBtnText,
