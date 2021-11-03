@@ -104,7 +104,7 @@ position: fixed;
 top: 0;
 bottom: 0;
 padding: 20px;
-right: -100;
+right: -100%;
 background: #fff;
 width: 250px;
 z-index: 100;
