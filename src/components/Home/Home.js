@@ -5,7 +5,6 @@ import { Container } from './HomeElements'
 const Home = () => {
     return (
         <Container>
-
             <Section
                 id="model-s"
                 title="Model S"

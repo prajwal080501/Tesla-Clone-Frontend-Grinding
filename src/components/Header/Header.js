@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Logo, Menu, MenuItem, RightMenu } from './HeaderElements'
+import { CloseIcon, Container, Logo, Menu, MenuItem, RightMenu, SideBar } from './HeaderElements'
 
 const Header = () => {
     return (
@@ -16,10 +16,27 @@ const Header = () => {
                 <MenuItem to="model-s">Solar Panels</MenuItem>
             </Menu>
             <RightMenu>
-                <MenuItem title="model-s" to="">Shop </MenuItem>
-                <MenuItem title="model-s" to="">Account </MenuItem>
-                <MenuItem title="model-s" to="">Menu</MenuItem>
+                <a title="model-s" to="">Shop </a>
+                <a title="model-s" to="">Account </a>
+                <a title="model-s" to="">Menu</a>
             </RightMenu>
+            <SideBar>
+                <CloseIcon />
+                <li>Existing Inventory</li>
+                <li>Used Inventory</li>
+                <li>Trade In</li>
+                <li>Test Drive</li>
+                <li>CyberTruck</li>
+                <li>Roadster</li>
+                <li>Semi</li>
+                <li>Charging</li>
+                <li>Powerwall</li>
+                <li>Commercial Energy</li>
+                <li>Utilities</li>
+                <li>Find Us</li>
+                <li>Support</li>
+                <li>Investor Relations</li>
+            </SideBar>
         </Container>
     )
 }

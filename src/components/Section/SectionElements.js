@@ -16,6 +16,7 @@ background-image : ${props => `url("/images/${props.bgImage}")`}
 `;
 
 export const ItemText = styled.div`
+z-index: 100;
 padding-top: 15vh;
 text-align: center;
 `;
