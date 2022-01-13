@@ -1,5 +1,6 @@
 import styled, {keyframes} from "styled-components";
 
+
 export const Wrap = styled.div`
 width: 100vw;
 height: 100vh;
@@ -13,6 +14,8 @@ flex-direction: column;
 justify-content: space-between;
 align-items: center;
 background-image : ${props => `url("/images/${props.bgImage}")`}
+
+
 `;
 
 export const ItemText = styled.div`

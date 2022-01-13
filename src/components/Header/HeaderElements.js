@@ -19,7 +19,7 @@ z-index:1;
 
 export const Logo = styled(Link)`
     display: flex;
-    height: 40px;
+    height: 33px;
     justify-self: flex-start;
     padding: 10px;
     margin-left: 10px;
@@ -74,6 +74,7 @@ transition: all 0.3s linear;
 &:hover{
     transition: all 0.5s linear;
     transform: scale(1.2);
+    font-weight: 600;
 }
 `;
 
@@ -104,23 +105,37 @@ position: fixed;
 top: 0;
 bottom: 0;
 padding: 20px;
-right: -100%;
+right: 0;
+list-style: none;
 background: #fff;
 width: 250px;
+text-decoration: none;
 z-index: 100;
 display: flex;
 flex-direction: column;
-
+border-radius: 10px;
+transition: all 0.3s linear;
+transition: opacity transform 0.3s;
+transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
+opacity: ${props => props.show ? '1' : '0'};
 
 li{
     text-decoration: none;
     list-style: none;
-    margin: 10px;
+    padding: 7px;
     text-align: left;
     margin-left: 20px;
     font-size: 14px;
     transition: all 0.3s linear;
     cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+
+    a{
+        list-style: none;
+        text-decoration: none;
+        font-weight: 500;
+    }
 
     
     &:hover{
@@ -129,11 +144,15 @@ li{
     }
 }
 
+@media screen and (max-width: 768px) {
+    position: fixed;
+}
+
+
 `;
 
 
 export const CloseIcon = styled(AiFillCloseCircle)`
-align-self: flex-end;
 transition: all 0.3s linear;
 cursor: pointer;
 
@@ -143,5 +162,15 @@ cursor: pointer;
     color: red;
 }
 
+@media screen and (max-width: 768px) {
+    position: fixed;
+`;
 
+export const CloseWrapper = styled.div`
+display: flex;
+justify-content: flex-end;
+
+@media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+}
 `;

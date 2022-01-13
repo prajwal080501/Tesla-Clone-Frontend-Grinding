@@ -1,4 +1,5 @@
 import React from "react";
+import "./Section.css";
 import {
   Wrap,
   ItemText,
@@ -11,6 +12,8 @@ import {
 import Fade from "react-reveal/Fade";
 
 const Section = ({
+  isOpen,
+  setIsOpen,
   title,
   description,
   leftBtnText,
@@ -18,7 +21,7 @@ const Section = ({
   backgroundImg,
 }) => {
   return (
-    <Wrap bgImage={backgroundImg}>
+    <Wrap isOpen={isOpen} bgImage={backgroundImg}>
       <Fade bottom>
         <ItemText>
           <h1>{title}</h1>
